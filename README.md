@@ -125,6 +125,6 @@ Located in the `scripts/` directory:
 *   `exam_topics_structured.json`: Output list of LLM-structured topics. 
 
 ## Notes
-**1.The sample_output.md is only a very small chunk of the actual final output as it would be put me in a legally grey area if I posted the full output.**
+**1.The sample_output.md is only a very small chunk of the actual final output as it would put me in a legally grey area if I posted the full output.**
 
 **2.The Project still needs a lot of refinement, particularly in areas of data cleaning and output cleaning. However, the current iteration meets my bare minimum demand to help me study better for this course.**
