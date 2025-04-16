@@ -2,7 +2,7 @@
 
 ## Problem & Motivation
 
-Technical courses often rely heavily on dense slide decks (PDFs) as primary learning material. These materials can be difficult to navigate, lack comprehensive explanations, and may not adequately connect concepts to practical application, especially when preparing for exams that test deeper understanding. The limited structure and explanation within the source PDFs makes traditional studying and information retrieval challenging.
+Technical courses often rely heavily on dense slide decks (PDFs) as primary learning material. These materials can be difficult to navigate, lack comprehensive explanations, and may not adequately connect concepts to practical application, especially when preparing for exams that test deeper understanding. The limited structure and explanation within the source PDFs makes traditional studying and information retrieval challenging. The Project still needs a lot of refinement, particularly in areas of data cleaning and output cleaning. However, the current iteration meets my bare minimum demand to help me study better for this course.
 
 This project addresses these limitations by leveraging Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) to:
 
@@ -104,6 +104,7 @@ Run the scripts in the following order from the project root directory:
 - **Cost and Complexity:** Using a powerful vision model like Gemini 1.5 Pro for every page is computationally more intensive and costly than simple text extraction. Rendering pages also adds processing time.
 - **Handling of Poorly Structured PDFs:** While the vision approach is more robust than methods relying solely on PDF structure parsing, extremely messy or unconventional slide layouts (e.g., heavy use of vector graphics misinterpreted as text, overlapping elements) can still challenge the LLM's analysis and description generation.
 - **Structuring Dependency:** The quality of the topic structuring in `structure_exam_topics.py` depends entirely on the LLM's understanding of the topic relationships. Reviewing the `exam_topics_structured.json` file is recommended.
+- **Data Cleaning and Repeation:** The final output has some repetitions but these were very minimum for the specific course that I have used, so I didn't bother refining it.
 - **Hallucination Risk:** While the RAG approach grounds the LLM in provided context, there's always a possibility the LLM might misunderstand the context or hallucinate during the augmentation step. The prompt attempts to mitigate this by asking the LLM to clearly separate retrieved vs. general knowledge.
 
 ## Scripts Overview
@@ -122,3 +123,6 @@ Located in the `scripts/` directory:
 *   `requirements.txt`: Lists Python dependencies.
 *   `exam_topics.json`: Input list of exam topics.
 *   `exam_topics_structured.json`: Output list of LLM-structured topics. 
+
+
+**NOTE:** The sample_output.md is only a very small chunk of the actual final output as it would be put me in a legally grey area if I posted the full output. 
