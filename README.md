@@ -2,7 +2,7 @@
 
 ## Problem & Motivation
 
-Technical courses often rely heavily on dense slide decks (PDFs) as primary learning material. These materials can be difficult to navigate, lack comprehensive explanations, and may not adequately connect concepts to practical application, especially when preparing for exams that test deeper understanding. The limited structure and explanation within the source PDFs makes traditional studying and information retrieval challenging. The Project still needs a lot of refinement, particularly in areas of data cleaning and output cleaning. However, the current iteration meets my bare minimum demand to help me study better for this course.
+Technical courses often rely heavily on dense slide decks (PDFs) as primary learning material. These materials can be difficult to navigate, lack comprehensive explanations, and may not adequately connect concepts to practical application, especially when preparing for exams that test deeper understanding. The limited structure and explanation within the source PDFs makes traditional studying and information retrieval challenging. 
 
 This project addresses these limitations by leveraging Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) to:
 
@@ -124,5 +124,7 @@ Located in the `scripts/` directory:
 *   `exam_topics.json`: Input list of exam topics.
 *   `exam_topics_structured.json`: Output list of LLM-structured topics. 
 
+## Notes
+**1.The sample_output.md is only a very small chunk of the actual final output as it would be put me in a legally grey area if I posted the full output.**
 
-**NOTE:** The sample_output.md is only a very small chunk of the actual final output as it would be put me in a legally grey area if I posted the full output. 
+**2.The Project still needs a lot of refinement, particularly in areas of data cleaning and output cleaning. However, the current iteration meets my bare minimum demand to help me study better for this course.**
