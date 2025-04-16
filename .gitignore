@@ -10,7 +10,7 @@ chroma_db_vision/
 processed_markdown_vision/
 scripts/json/
 
-# Output directories (Optional - uncomment if you don't want to commit)
+# Output directories 
 # exam_solutions_rag/
 Exam_Guide_Async.md
 # Exam_Guide_*.md 
