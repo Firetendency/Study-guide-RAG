@@ -1,0 +1,8 @@
+google-generativeai
+python-dotenv
+marker-pdf
+PyMuPDF
+# chromadb - Not needed for marker evaluation
+# Pillow - Not needed directly (marker handles its own image deps)
+# PyMuPDF (fitz) - Marker uses its own PDF backend (pypdfium2)
+# camelot-py[cv] - Not needed for marker evaluation
